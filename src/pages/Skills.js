@@ -30,14 +30,14 @@ const skillCategories = [
     ],
   },
   {
-    title: 'Hardware & IoT Engineering',
+    title: 'Hardware & Embedded Systems',
     icon: '🔌',
     skills: [
-      { name: 'C Language', level: 'Proficient' },
+      { name: 'C / C++', level: 'Proficient' },
       { name: 'ATmega32', level: 'Advanced' },
+      { name: 'Microchip Studio', level: 'Advanced' },
       { name: 'Proteus Simulation', level: 'Proficient' },
-      { name: 'Microchip Studio', level: 'Proficient' },
-      { name: 'IoT Sensors & BLE', level: 'Advanced' },
+      { name: 'Sensors & Actuators', level: 'Advanced' },
       { name: 'UI/UX Design', level: 'Proficient' },
     ],
   },

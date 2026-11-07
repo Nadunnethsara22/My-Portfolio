@@ -25,7 +25,7 @@ const projects = [
     id: 2,
     title: 'University Student Event Management System',
     category: 'Full-Stack Web & UI/UX',
-    badge: 'Group Project',
+    badge: 'Individual Project',
     desc: 'A modern web-based event coordination platform designed for university communities to discover, publish, schedule, and register for campus activities.',
     highlights: [
       'Architected an end-to-end web platform for university event administration and discovery.',
@@ -33,23 +33,23 @@ const projects = [
       'Applied modern UI/UX design heuristics to optimize participant engagement across devices.'
     ],
     tech: ['React.js', 'JavaScript', 'Tailwind CSS', 'Responsive Design', 'REST APIs'],
-    github: 'https://github.com/Nadunnethsara22/Student_Event_Management_System',
+    github: 'https://github.com/Nadunnethsara22/Event-Management-System.git',
     image: `${PUBLIC}/image/event-management.png`,
     color: '#38bdf8',
   },
   {
     id: 3,
     title: 'ATmega32 Smart Home Automation System',
-    category: 'Embedded Systems & IoT',
-    badge: 'Hardware & Systems Project',
-    desc: 'An autonomous smart home controller engineered around the ATmega32 microcontroller, utilizing multi-sensor feedback loops to govern climate, security, and illumination.',
+    category: 'Embedded Microcontroller Systems',
+    badge: 'Microcontroller Project',
+    desc: 'An automated home monitoring and appliance control system engineered with the ATmega32 microcontroller and Microchip Studio, programmed in C++ with multi-sensor feedback loops.',
     highlights: [
-      'Developed a multi-sensor microcontroller automation system programmed in embedded C.',
-      'Integrated real-time temperature, gas/smoke leakage (MQ-2), ambient light (LDR), and humidity detection.',
+      'Developed an automated microcontroller home control system programmed in C++ using Microchip Studio.',
+      'Integrated real-time temperature, gas/smoke leakage (MQ-2), ambient light (LDR), and humidity monitoring.',
       'Constructed automated actuation circuits governing cooling fans, intelligent relays, alarms, and buzzer sirens.',
-      'Simulated circuit schematics and verified firmware execution in Proteus and Microchip Studio.'
+      'Designed and validated complete hardware circuit simulations and firmware execution in Proteus.'
     ],
-    tech: ['C Language', 'ATmega32', 'Proteus Simulation', 'Microchip Studio', 'Relays & Sensors'],
+    tech: ['C++', 'ATmega32', 'Microchip Studio', 'Proteus Simulation', 'Relays & Sensors'],
     github: 'https://github.com/Nadunnethsara22',
     image: `${PUBLIC}/image/smart-home.png`,
     color: '#06b6d4',
@@ -67,7 +67,7 @@ const projects = [
       'Designed a clean, responsive bilingual-ready user interface optimized for high usability.'
     ],
     tech: ['React.js', 'JavaScript', 'Tailwind CSS', 'Node.js', 'REST APIs', 'eCommerce'],
-    github: 'https://github.com/Nadunnethsara22',
+    github: 'https://github.com/Nadunnethsara22/agriconnect.git',
     image: `${PUBLIC}/image/agriconnect.jpg`,
     color: '#10b981',
   },
@@ -82,7 +82,7 @@ export default function Projects() {
           <span className="section-tag">Featured Work</span>
           <h2 className="section-title">Projects That Showcase My Skills</h2>
           <p className="section-subtitle">
-            A collection of production-ready projects featuring mobile applications, smart IoT embedded systems, and full-stack web platforms.
+            A collection of production-ready projects featuring mobile applications, embedded microcontroller systems, and full-stack web platforms.
           </p>
         </div>
 
