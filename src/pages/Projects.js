@@ -24,15 +24,16 @@ const projects = [
   {
     id: 2,
     title: 'University Student Event Management System',
-    category: 'Full-Stack Web & UI/UX',
+    category: 'Full-Stack Web (PHP & MySQL)',
     badge: 'Individual Project',
-    desc: 'A modern web-based event coordination platform designed for university communities to discover, publish, schedule, and register for campus activities.',
+    desc: 'A robust web-based event coordination platform engineered with PHP and MySQL, designed for university communities to discover, manage, and register for campus activities.',
     highlights: [
-      'Architected an end-to-end web platform for university event administration and discovery.',
-      'Engineered responsive, accessible user interfaces with streamlined event registration pipelines.',
-      'Applied modern UI/UX design heuristics to optimize participant engagement across devices.'
+      'Developed a dynamic event management web application using native PHP backend and MySQL relational database.',
+      'Implemented full CRUD features for event creation, attendee registration, schedule management, and participant records.',
+      'Structured secure database schema with input validation, session handling, and relational query optimization.',
+      'Designed responsive, accessible frontend layouts using HTML5, CSS3, and JavaScript for seamless cross-device browsing.'
     ],
-    tech: ['React.js', 'JavaScript', 'Tailwind CSS', 'Responsive Design', 'REST APIs'],
+    tech: ['PHP', 'MySQL', 'JavaScript', 'HTML5', 'CSS3', 'Responsive Web'],
     github: 'https://github.com/Nadunnethsara22/Event-Management-System.git',
     image: `${PUBLIC}/image/event-management.png`,
     color: '#38bdf8',
