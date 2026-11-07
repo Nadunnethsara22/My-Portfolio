@@ -1,65 +1,46 @@
 import React from 'react';
 import './Certificates.css';
 
-const certificates = [
+const certificatesData = [
   {
-    id: 1,
-    title: 'Higher National Diploma in Information Technology',
-    issuer: 'Institute of Technology, University of Moratuwa (ITUM)',
-    year: '2025 – Present',
-    badge: 'Undergraduate Program',
-    color: '#2563eb',
-    icon: '🎓',
+    period: "2025 – PRESENT",
+    degree: "Higher National Diploma in Information Technology",
+    institution: "Institute of Technology, University of Moratuwa (ITUM)",
   },
   {
-    id: 2,
-    title: 'Certificate Course in Python for Beginners',
-    issuer: 'Centre for Open & Distance Learning (CODL), University of Moratuwa',
-    year: 'Certified',
-    badge: 'Programming Foundations',
-    color: '#38bdf8',
-    icon: '🐍',
+    period: "CERTIFICATION",
+    degree: "Certificate Course in Python for Beginners",
+    institution: "Centre for Open & Distance Learning (CODL), University of Moratuwa",
   },
   {
-    id: 3,
-    title: 'Certificate Course in Basics of UI/UX',
-    issuer: 'Simplilearn SkillUp',
-    year: 'Certified',
-    badge: 'UI/UX & User Experience',
-    color: '#6366f1',
-    icon: '🎨',
-  },
+    period: "CERTIFICATION",
+    degree: "Certificate Course in Basics of UI/UX",
+    institution: "Simplilearn SkillUp",
+  }
 ];
 
 export default function Certificates() {
   return (
     <div className="certificates-section">
       <div className="container">
-        <div className="certificates__header">
+        <div className="certificates-header">
           <span className="section-tag">Credentials</span>
-          <h2 className="section-title">Education & Certifications</h2>
+          <h2 className="section-title">Education &amp; Certifications</h2>
           <p className="section-subtitle">
-            Academic qualifications and professional certifications verified through recognized universities and learning platforms.
+            Academic qualifications and certified coursework.
           </p>
         </div>
 
-        <div className="certificates__timeline">
-          {certificates.map((cert) => (
-            <div key={cert.id} className="cert-item">
-              <div className="cert-item__marker" style={{ borderColor: cert.color }}>
-                <span className="cert-item__icon">{cert.icon}</span>
+        <div className="education-timeline">
+          {certificatesData.map((ed, i) => (
+            <article className="education-item" key={i} aria-label={ed.degree}>
+              <div className="education-item__dot" aria-hidden="true" />
+              <div className="education-item__content">
+                <div className="education-item__period">{ed.period}</div>
+                <h3>{ed.degree}</h3>
+                <p className="education-item__institution">{ed.institution}</p>
               </div>
-              <div className="cert-item__card">
-                <div className="cert-item__top">
-                  <span className="cert-item__badge" style={{ color: cert.color, borderColor: cert.color }}>
-                    {cert.badge}
-                  </span>
-                  <span className="cert-item__year">{cert.year}</span>
-                </div>
-                <h3 className="cert-item__title">{cert.title}</h3>
-                <p className="cert-item__issuer">{cert.issuer}</p>
-              </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>

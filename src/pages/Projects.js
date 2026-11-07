@@ -58,16 +58,16 @@ const projects = [
   {
     id: 4,
     title: 'AgriConnect LK – Digital Agricultural Marketplace',
-    category: 'Full-Stack Web & Marketplace',
+    category: 'Full-Stack Web (React & Firebase)',
     badge: 'Agricultural Platform',
-    desc: 'A direct farmer-to-consumer and wholesale agro-trading platform connecting regional growers across Nuwara Eliya, Dambulla, Anuradhapura, and Jaffna with commercial buyers, eliminating broker markups.',
+    desc: 'A direct farmer-to-consumer and wholesale agro-trading platform engineered with React.js and Firebase, connecting regional growers across Nuwara Eliya, Dambulla, Anuradhapura, and Jaffna directly with commercial buyers.',
     highlights: [
-      'Developed a digital agricultural marketplace with district-wise crop filtering across all 25 districts.',
-      'Implemented transparent wholesale market price benchmarks, real-time stock listings, and direct trade inquiries.',
-      'Built dual onboarding portals for farmers to sell harvests and wholesale buyers to procure produce.',
-      'Designed a clean, responsive bilingual-ready user interface optimized for high usability.'
+      'Developed a full-stack digital agricultural marketplace using React.js and Google Firebase cloud infrastructure.',
+      'Integrated Firebase Authentication, Cloud Firestore real-time database, and Firebase Storage for crop listings.',
+      'Implemented district-wise crop filtering across all 25 districts with transparent market price benchmarks.',
+      'Built dual onboarding portals for farmers to sell harvests and wholesale buyers to procure produce with zero broker markups.'
     ],
-    tech: ['React.js', 'JavaScript', 'Tailwind CSS', 'Node.js', 'REST APIs', 'eCommerce'],
+    tech: ['React.js', 'Firebase Auth', 'Cloud Firestore', 'Firebase Storage', 'JavaScript', 'Tailwind CSS'],
     github: 'https://github.com/Nadunnethsara22/agriconnect.git',
     image: `${PUBLIC}/image/agriconnect.jpg`,
     color: '#10b981',

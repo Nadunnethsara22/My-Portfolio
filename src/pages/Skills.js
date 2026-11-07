@@ -21,13 +21,6 @@ const skillGroups = [
 ];
 
 export default function Skills() {
-  const scrollTo = (id) => {
-    const el = document.getElementById(id);
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <div className="skills-section">
       <div className="container">
@@ -56,25 +49,6 @@ export default function Skills() {
             </div>
           ))}
         </div>
-
-        {/* CTA */}
-        <div className="skills-cta-simple">
-          <div>
-            <h3>Interested in seeing my work?</h3>
-            <p>Explore real-world projects built with these technologies.</p>
-          </div>
-          <button 
-            type="button" 
-            onClick={() => scrollTo('projects')} 
-            className="btn-primary"
-          >
-            View Projects
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" aria-hidden="true">
-              <path d="M5 12h14M12 5l7 7-7 7" />
-            </svg>
-          </button>
-        </div>
-
       </div>
     </div>
   );

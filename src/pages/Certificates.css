@@ -15,12 +15,15 @@
   gap: 0;
   padding-left: 20px;
   border-left: 2px solid var(--border);
+  max-width: 840px;
 }
 
 .education-item {
   position: relative;
-  padding: 0 0 28px 36px;
+  padding: 0 0 32px 36px;
+  transition: var(--transition);
 }
+
 .education-item:last-child { 
   padding-bottom: 0; 
 }
@@ -34,7 +37,19 @@
   border-radius: 50%;
   background: var(--accent);
   border: 3px solid var(--bg);
-  box-shadow: 0 0 12px var(--accent-glow);
+  box-shadow: 0 0 14px var(--accent-glow);
+  transition: var(--transition);
+}
+
+.education-item:hover .education-item__dot {
+  transform: scale(1.25);
+  box-shadow: 0 0 20px rgba(var(--accent-rgb), 0.7);
+  background: var(--accent2);
+}
+
+.education-item__content {
+  background: transparent;
+  transition: var(--transition);
 }
 
 .education-item__period {
@@ -47,13 +62,18 @@
 }
 
 .education-item h3 {
-  font-size: 1.12rem;
+  font-size: 1.15rem;
   margin-bottom: 4px;
   color: var(--text);
+  transition: var(--transition);
+}
+
+.education-item:hover h3 {
+  color: var(--accent2);
 }
 
 .education-item__institution {
-  font-size: 0.9rem;
+  font-size: 0.92rem;
   color: var(--text2);
   margin-bottom: 0;
 }
