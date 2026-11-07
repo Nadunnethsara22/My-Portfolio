@@ -23,6 +23,16 @@
   gap: 24px;
 }
 
+.navbar__inner--centered {
+  justify-content: center;
+  position: relative;
+}
+
+.navbar__inner--centered .navbar__cta {
+  position: absolute;
+  right: 24px;
+}
+
 /* Logo */
 .navbar__logo {
   font-family: var(--font-display);

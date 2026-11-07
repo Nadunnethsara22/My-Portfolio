@@ -4,8 +4,7 @@ import profileImg from '../assets/profile.jpg';
 
 const roles = [
   'Software Engineer',
-  'Mobile Application Developer',
-  'Full-Stack Developer'
+  'Mobile Application Developer'
 ];
 
 export default function Home() {
@@ -60,11 +59,7 @@ export default function Home() {
               </span>
             </h1>
 
-            <p className="hero__intro fade-up-delay-1">
-              Passionate IT undergraduate specializing in full-stack web applications, mobile engineering, and IoT embedded systems. Focused on building high-performance, accessible digital solutions.
-            </p>
-
-            <div className="hero__cta-group fade-up-delay-2">
+            <div className="hero__cta-group fade-up-delay-1">
               <button 
                 type="button" 
                 onClick={() => scrollTo('projects')} 

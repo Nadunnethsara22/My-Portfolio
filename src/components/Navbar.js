@@ -46,16 +46,7 @@ export default function Navbar() {
 
   return (
     <header className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
-      <div className="container navbar__inner">
-        <button 
-          type="button" 
-          onClick={() => scrollTo('home')} 
-          className="navbar__logo" 
-          aria-label="Nadun Nethsara Home"
-        >
-          Nadun<span className="navbar__logo-dot">.</span>
-        </button>
-
+      <div className="container navbar__inner navbar__inner--centered">
         <ul className="navbar__links">
           {navLinks.map((link) => (
             <li key={link.id}>
@@ -99,7 +90,7 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Drawer */}
-      <div className={`navbar__drawer ${menuOpen ? 'open' : ''}`}>
+      <div className={`navbar__mobile ${menuOpen ? 'navbar__mobile--open' : ''}`}>
         {navLinks.map((link) => (
           <button
             key={link.id}
