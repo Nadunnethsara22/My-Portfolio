@@ -1,0 +1,121 @@
+/* ABOUT SECTION */
+.about-section {
+  padding: 90px 0 100px;
+  background: var(--bg2);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  position: relative;
+}
+
+.about-header {
+  margin-bottom: 24px;
+}
+
+/* BIO */
+.about-bio__grid {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 48px;
+  align-items: start;
+  margin-bottom: 0;
+}
+
+.about-bio__name {
+  font-size: clamp(2rem, 4.5vw, 2.8rem);
+  margin-bottom: 18px;
+  color: var(--text);
+}
+
+.about-bio__text p {
+  color: var(--text2);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.about-bio__info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 28px;
+  padding: 24px;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.about-bio__info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.about-bio__info-label {
+  font-size: 0.75rem;
+  color: var(--text3);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.about-bio__info-value {
+  font-size: 0.9rem;
+  color: var(--text);
+  font-weight: 500;
+}
+
+/* Aspiration card */
+.aspiration-card {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  position: sticky;
+  top: 100px;
+}
+
+.aspiration-card__icon {
+  font-size: 2.2rem;
+  margin-bottom: 14px;
+}
+
+.aspiration-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  color: var(--text);
+}
+
+.aspiration-card p {
+  font-size: 0.9rem;
+  color: var(--text2);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.aspiration-card__tags { 
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 8px; 
+}
+
+.aspiration-card__tag {
+  font-size: 0.78rem;
+  padding: 4px 12px;
+  border-radius: 100px;
+  background: var(--accent-soft);
+  border: 1px solid rgba(var(--accent-rgb), 0.25);
+  color: var(--accent2);
+}
+
+@media (max-width: 900px) {
+  .about-bio__grid { 
+    grid-template-columns: 1fr; 
+  }
+  .aspiration-card { 
+    position: static; 
+  }
+}
+
+@media (max-width: 600px) {
+  .about-bio__info { 
+    grid-template-columns: 1fr; 
+  }
+}
