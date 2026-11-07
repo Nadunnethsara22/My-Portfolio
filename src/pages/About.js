@@ -15,10 +15,10 @@ export default function About() {
           <div className="about-bio__text">
             <h2 className="section-title about-bio__name">Nadun Nethsara</h2>
             <p>
-              I am an enthusiastic Software Engineer and Mobile Application Developer currently pursuing my Higher National Diploma in Information Technology at ITUM, University of Moratuwa. Driven by a passion for building software that solves meaningful problems, I develop responsive web platforms, cross-platform mobile apps, and embedded microcontroller systems with an emphasis on clean architecture and fluid user experiences.
+              Software Engineer and Mobile Application Developer pursuing an HND in Information Technology at ITUM, University of Moratuwa. I specialize in building responsive web platforms with React and modern mobile applications using Flutter and Firebase.
             </p>
-            <p style={{ marginTop: 14 }}>
-              From architecting smart healthcare wearables with Flutter and real-time cloud databases to engineering digital marketplace solutions with React and Firebase, I thrive on turning complex requirements into elegant, reliable digital products. I am constantly expanding my technical horizons, writing maintainable code, and eager to contribute to innovative, high-impact engineering teams.
+            <p style={{ marginTop: 12 }}>
+              Focused on writing clean, scalable code and crafting seamless digital experiences that solve real-world problems.
             </p>
 
             <div className="about-bio__info" role="list" aria-label="Personal information">
