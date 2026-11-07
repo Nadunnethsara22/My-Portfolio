@@ -67,7 +67,7 @@
 .project-card__overlay {
   position: absolute;
   inset: 0;
-  background: rgba(9, 14, 26, 0.88);
+  background: rgba(7, 5, 13, 0.88);
   backdrop-filter: blur(8px);
   display: flex;
   align-items: center;

@@ -19,7 +19,7 @@ const projects = [
     tech: ['Flutter', 'Firebase', 'IoT Sensors', 'BLE', 'Web Dashboard', 'Cloud Firestore'],
     github: 'https://github.com/NisalAluthge/SentinelCare.git',
     image: `${PUBLIC}/image/sentinelcare.png`,
-    color: '#2563eb',
+    color: '#a855f7',
   },
   {
     id: 2,
@@ -36,7 +36,7 @@ const projects = [
     tech: ['PHP', 'MySQL', 'JavaScript', 'HTML5', 'CSS3', 'Responsive Web'],
     github: 'https://github.com/Nadunnethsara22/Event-Management-System.git',
     image: `${PUBLIC}/image/event-management.png`,
-    color: '#38bdf8',
+    color: '#c084fc',
   },
   {
     id: 3,
@@ -53,7 +53,7 @@ const projects = [
     tech: ['C++', 'ATmega32', 'Microchip Studio', 'Proteus Simulation', 'Relays & Sensors'],
     github: 'https://github.com/Nadunnethsara22',
     image: `${PUBLIC}/image/smart-home.png`,
-    color: '#06b6d4',
+    color: '#8b5cf6',
   },
   {
     id: 4,

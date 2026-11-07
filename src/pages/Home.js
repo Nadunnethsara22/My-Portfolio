@@ -42,7 +42,7 @@ export default function Home() {
     <div className="home">
       {/* HERO */}
       <section className="hero" aria-labelledby="hero-heading">
-        {/* Background decorative blobs */}
+        {/* Background decorative purple blobs */}
         <div className="hero__blob hero__blob--1" aria-hidden="true" />
         <div className="hero__blob hero__blob--2" aria-hidden="true" />
 
@@ -93,11 +93,15 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Visual */}
+          {/* Visual: Sleek Rectangle Portrait Frame */}
           <div className="hero__visual" aria-hidden="true">
-            <div className="hero__avatar-ring">
-              <div className="hero__avatar">
-                <img src={profileImg} alt="Nadun Nethsara" className="hero__profile-pic" />
+            <div className="hero__portrait-card">
+              <div className="hero__portrait-wrapper">
+                <img 
+                  src={profileImg} 
+                  alt="Nadun Nethsara" 
+                  className="hero__profile-pic" 
+                />
               </div>
             </div>          
           </div>
