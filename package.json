@@ -2,7 +2,7 @@
   "name": "nadun-portfolio",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://nadunnethsara22.github.io/portfolio",
+  "homepage": "https://nadunnethsara22.github.io/My-Portfolio",
   "dependencies": {
     "bootstrap": "^5.3.8",
     "react": "^18.2.0",
