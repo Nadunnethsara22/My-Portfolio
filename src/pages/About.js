@@ -47,7 +47,6 @@ export default function About() {
               <div className="aspiration-card__tags">
                 <span className="aspiration-card__tag">Software Engineering</span>
                 <span className="aspiration-card__tag">Mobile Development</span>
-                <span className="aspiration-card__tag">IoT & Embedded</span>
               </div>
             </div>    
           </aside>
