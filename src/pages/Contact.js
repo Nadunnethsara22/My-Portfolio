@@ -31,7 +31,7 @@ const contactInfo = [
       </svg>
     ),
     label: 'Location',
-    value: 'Thanamalwila / Moratuwa, Sri Lanka',
+    value: 'Thanamalwila / Monaragala, Sri Lanka',
     href: null,
   },
   {

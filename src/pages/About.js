@@ -23,7 +23,7 @@ export default function About() {
 
             <div className="about-bio__info" role="list" aria-label="Personal information">
               {[
-                { label: 'Location', value: 'No 22, Suriyaara, Thanamalwila, Sri Lanka' },
+                { label: 'Location', value: 'Thanamalwila / Monaragala, Sri Lanka' },
                 { label: 'Email', value: 'nethsaranadun802@gmail.com' },
                 { label: 'Phone', value: '+94 76 388 6139' },
                 { label: 'Status', value: 'Open to Software Engineering & Mobile Dev Internships' },
