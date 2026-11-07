@@ -9,14 +9,14 @@ const projects = [
     title: 'Smart Medical Hand Band – SentinelCare',
     category: 'IoT & Mobile',
     badge: 'Final Year Group Project',
-    desc: 'A low-cost IoT-based wearable system designed for elderly individuals living alone, featuring automated physiological monitoring and instant emergency response.',
+    desc: 'A smart IoT-based wearable healthcare system designed for elderly people living alone, featuring automated physiological vital monitoring and real-time emergency alert dispatch.',
     highlights: [
-      'Developed a low-cost IoT-based wearable system for elderly people living alone.',
-      'Implemented health monitoring using heart rate, SpO₂, and body temperature sensors.',
-      'Integrated fall detection using accelerometer, gyroscope, and pressure sensors.',
-      'Developed a Flutter mobile application for caregivers and a web dashboard for report viewing.'
+      'Developed a low-cost IoT wearable device for continuous health monitoring for seniors.',
+      'Integrated SpO₂, heart rate, body temperature, accelerometer, and pressure fall sensors.',
+      'Engineered a caregiver mobile application using Flutter and a real-time web dashboard.',
+      'Implemented automated emergency alerts, medicine reminders, and cloud data synchronization.'
     ],
-    tech: ['Flutter', 'Firebase', 'IoT Sensors', 'BLE', 'Web Dashboard'],
+    tech: ['Flutter', 'Firebase', 'IoT Sensors', 'BLE', 'Web Dashboard', 'Cloud Firestore'],
     github: 'https://github.com/NisalAluthge/SentinelCare.git',
     image: `${PUBLIC}/image/sentinelcare.png`,
     color: '#2563eb',
@@ -24,15 +24,15 @@ const projects = [
   {
     id: 2,
     title: 'University Student Event Management System',
-    category: 'Web App & UI/UX',
+    category: 'Full-Stack Web & UI/UX',
     badge: 'Group Project',
-    desc: 'A web-based platform tailored for university communities to discover, organize, publish, and register for student activities and campus events.',
+    desc: 'A modern web-based event coordination platform designed for university communities to discover, publish, schedule, and register for campus activities.',
     highlights: [
-      'Designed and developed a web-based platform for managing and discovering university events.',
-      'Created user-friendly interfaces for event browsing, registration, and event information management.',
-      'Applied UI/UX principles to improve usability and accessibility.'
+      'Architected an end-to-end web platform for university event administration and discovery.',
+      'Engineered responsive, accessible user interfaces with streamlined event registration pipelines.',
+      'Applied modern UI/UX design heuristics to optimize participant engagement across devices.'
     ],
-    tech: ['React.js', 'JavaScript', 'Tailwind CSS', 'Responsive UI', 'UI/UX Design'],
+    tech: ['React.js', 'JavaScript', 'Tailwind CSS', 'Responsive Design', 'REST APIs'],
     github: 'https://github.com/Nadunnethsara22/Student_Event_Management_System',
     image: `${PUBLIC}/image/event-management.png`,
     color: '#38bdf8',
@@ -40,34 +40,36 @@ const projects = [
   {
     id: 3,
     title: 'ATmega32 Smart Home Automation System',
-    category: 'Embedded & IoT',
+    category: 'Embedded Systems & IoT',
     badge: 'Hardware & Systems Project',
-    desc: 'An automated home monitoring and appliance control solution built around the ATmega32 microcontroller and multi-sensor environmental feedback loops.',
+    desc: 'An autonomous smart home controller engineered around the ATmega32 microcontroller, utilizing multi-sensor feedback loops to govern climate, security, and illumination.',
     highlights: [
-      'Developed a microcontroller-based smart home automation system using multiple sensors.',
-      'Implemented temperature, gas leakage, light, and humidity monitoring features.',
-      'Designed automated control mechanisms for devices such as fans, LEDs, and buzzers.'
+      'Developed a multi-sensor microcontroller automation system programmed in embedded C.',
+      'Integrated real-time temperature, gas/smoke leakage (MQ-2), ambient light (LDR), and humidity detection.',
+      'Constructed automated actuation circuits governing cooling fans, intelligent relays, alarms, and buzzer sirens.',
+      'Simulated circuit schematics and verified firmware execution in Proteus and Microchip Studio.'
     ],
-    tech: ['C', 'ATmega32', 'Proteus Simulation', 'Microchip Studio', 'Sensors & Relays'],
+    tech: ['C Language', 'ATmega32', 'Proteus Simulation', 'Microchip Studio', 'Relays & Sensors'],
     github: 'https://github.com/Nadunnethsara22',
-    image: `${PUBLIC}/image/smart-home.svg`,
-    color: '#10b981',
+    image: `${PUBLIC}/image/smart-home.png`,
+    color: '#06b6d4',
   },
   {
     id: 4,
-    title: 'Personal Portfolio Website',
-    category: 'Frontend Engineering',
-    badge: 'Individual Project',
-    desc: 'A modern, high-performance responsive personal portfolio designed to showcase engineering projects, certifications, and technical proficiencies.',
+    title: 'AgriConnect LK – Digital Agricultural Marketplace',
+    category: 'Full-Stack Web & Marketplace',
+    badge: 'Agricultural Platform',
+    desc: 'A direct farmer-to-consumer and wholesale agro-trading platform connecting regional growers across Nuwara Eliya, Dambulla, Anuradhapura, and Jaffna with commercial buyers, eliminating broker markups.',
     highlights: [
-      'Designed and developed a responsive personal portfolio website to showcase my projects, skills, and contact details.',
-      'Built reusable React components and implemented smooth section-based navigation.',
-      'Used HTML and CSS to create a clean, mobile-friendly layout, applying UI/UX principles for better usability.'
+      'Developed a digital agricultural marketplace with district-wise crop filtering across all 25 districts.',
+      'Implemented transparent wholesale market price benchmarks, real-time stock listings, and direct trade inquiries.',
+      'Built dual onboarding portals for farmers to sell harvests and wholesale buyers to procure produce.',
+      'Designed a clean, responsive bilingual-ready user interface optimized for high usability.'
     ],
-    tech: ['React.js', 'JavaScript', 'CSS3', 'GitHub Pages', 'UI/UX Design'],
+    tech: ['React.js', 'JavaScript', 'Tailwind CSS', 'Node.js', 'REST APIs', 'eCommerce'],
     github: 'https://github.com/Nadunnethsara22',
-    image: `${PUBLIC}/image/portfolio-preview.svg`,
-    color: '#6366f1',
+    image: `${PUBLIC}/image/agriconnect.jpg`,
+    color: '#10b981',
   },
 ];
 
@@ -75,63 +77,88 @@ export default function Projects() {
   return (
     <div className="projects-section">
       <div className="container">
-        <div className="projects__header">
+        {/* Header */}
+        <div className="projects-header">
           <span className="section-tag">Featured Work</span>
-          <h2 className="section-title">Projects & Systems</h2>
+          <h2 className="section-title">Projects That Showcase My Skills</h2>
           <p className="section-subtitle">
-            A showcase of production-ready mobile applications, web platforms, and embedded IoT systems I have engineered.
+            A collection of production-ready projects featuring mobile applications, smart IoT embedded systems, and full-stack web platforms.
           </p>
         </div>
 
-        <div className="projects__grid">
+        {/* Projects Grid */}
+        <div className="projects-grid">
           {projects.map((project) => (
-            <article key={project.id} className="project-card">
-              <div className="project-card__img-wrap">
+            <article
+              className="project-card"
+              key={project.id}
+              aria-label={`Project: ${project.title}`}
+              style={{ '--project-color': project.color }}
+            >
+              <div className="project-card__image" aria-label={`${project.title} screenshot`}>
                 <img 
                   src={project.image} 
-                  alt={project.title} 
-                  className="project-card__img"
-                  onError={(e) => {
-                    e.target.onerror = null;
-                    e.target.src = `${PUBLIC}/image/portfolio-preview.svg`;
-                  }}
+                  alt={`${project.title} Preview`} 
+                  className="project-card__src-img"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                 />
-                <span className="project-card__badge" style={{ borderColor: project.color, color: project.color }}>
-                  {project.badge}
-                </span>
+
+                <div className="project-card__overlay">
+                  <a
+                    href={project.github}
+                    className="btn-outline"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label={`View ${project.title} on GitHub`}
+                  >
+                    View Code
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                      <polyline points="15 3 21 3 21 9" />
+                      <line x1="10" y1="14" x2="21" y2="3" />
+                    </svg>
+                  </a>
+                </div>
               </div>
 
               <div className="project-card__body">
-                <span className="project-card__category">{project.category}</span>
+                <div className="project-card__meta">
+                  <span className="project-card__category">{project.category}</span>
+                  {project.badge && <span className="project-card__badge">{project.badge}</span>}
+                </div>
+
                 <h3 className="project-card__title">{project.title}</h3>
                 <p className="project-card__desc">{project.desc}</p>
 
-                <div className="project-card__highlights">
-                  <h4 className="project-card__highlights-title">Key Contributions:</h4>
-                  <ul>
-                    {project.highlights.map((h, i) => (
-                      <li key={i}>{h}</li>
+                {project.highlights && (
+                  <ul className="project-card__bullets">
+                    {project.highlights.map((bullet, i) => (
+                      <li key={i} className="project-card__bullet">
+                        <span className="project-card__bullet-dot" aria-hidden="true" />
+                        <span>{bullet}</span>
+                      </li>
                     ))}
                   </ul>
-                </div>
+                )}
 
-                <div className="project-card__tech">
-                  {project.tech.map((t, i) => (
-                    <span key={i} className="project-card__tech-tag">{t}</span>
+                <div className="project-card__tech" aria-label="Technologies used">
+                  {project.tech.map((t) => (
+                    <span key={t} className="project-card__tech-tag">{t}</span>
                   ))}
                 </div>
 
-                <div className="project-card__actions">
-                  <a 
-                    href={project.github} 
-                    target="_blank" 
-                    rel="noreferrer" 
-                    className="btn-outline project-card__btn"
+                <div className="project-card__links">
+                  <a
+                    href={project.github}
+                    className="project-card__link project-card__link--accent"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label={`GitHub repository for ${project.title}`}
                   >
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
                     </svg>
-                    GitHub Code
+                    View on GitHub
                   </a>
                 </div>
               </div>
