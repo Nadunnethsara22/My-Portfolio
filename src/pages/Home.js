@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Home.css';
 import profileImg from '../assets/profile.jpg';
-import resumePdf from '../assets/resume.pdf';
+import { RESUME_URL, RESUME_FILENAME } from '../constants';
 
 const roles = [
   'Software Engineer',
@@ -72,8 +72,8 @@ export default function Home() {
                 </svg>
               </button>
               <a 
-                href={resumePdf} 
-                download="Nadun_Nethsara_Resume.pdf" 
+                href={RESUME_URL} 
+                download={RESUME_FILENAME} 
                 className="btn-outline"
                 title="Download CV / Resume"
               >

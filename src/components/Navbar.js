@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
-import resumePdf from '../assets/resume.pdf';
+import { RESUME_URL, RESUME_FILENAME } from '../constants';
 
 const navLinks = [
   { id: 'home', label: 'Home' },
@@ -63,8 +63,8 @@ export default function Navbar() {
         </ul>
 
         <a 
-          href={resumePdf} 
-          download="Nadun_Nethsara_Resume.pdf" 
+          href={RESUME_URL} 
+          download={RESUME_FILENAME} 
           className="btn-outline navbar__cta"
           style={{ padding: '8px 18px', fontSize: '0.85rem' }}
           title="Download CV / Resume"
@@ -103,8 +103,8 @@ export default function Navbar() {
           </button>
         ))}
         <a 
-          href={resumePdf} 
-          download="Nadun_Nethsara_Resume.pdf" 
+          href={RESUME_URL} 
+          download={RESUME_FILENAME} 
           className="btn-outline" 
           style={{ marginTop: 12, width: 'fit-content', padding: '10px 20px', fontSize: '0.9rem' }}
         >
