@@ -65,8 +65,6 @@ export default function Navbar() {
         <a 
           href={resumePdf} 
           download="Nadun_Nethsara_Resume.pdf" 
-          target="_blank"
-          rel="noreferrer"
           className="btn-outline navbar__cta"
           style={{ padding: '8px 18px', fontSize: '0.85rem' }}
           title="Download CV / Resume"
@@ -107,8 +105,6 @@ export default function Navbar() {
         <a 
           href={resumePdf} 
           download="Nadun_Nethsara_Resume.pdf" 
-          target="_blank"
-          rel="noreferrer"
           className="btn-outline" 
           style={{ marginTop: 12, width: 'fit-content', padding: '10px 20px', fontSize: '0.9rem' }}
         >

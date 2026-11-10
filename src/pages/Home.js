@@ -74,8 +74,6 @@ export default function Home() {
               <a 
                 href={resumePdf} 
                 download="Nadun_Nethsara_Resume.pdf" 
-                target="_blank"
-                rel="noreferrer"
                 className="btn-outline"
                 title="Download CV / Resume"
               >
